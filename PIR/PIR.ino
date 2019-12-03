@@ -16,6 +16,7 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(flag_PIR == 1) {
     Serial.println("Detected");
+    flag_PIR = 0;
   }
   else if(flag_PIR == 0) {
     Serial.println("Not Detected");
